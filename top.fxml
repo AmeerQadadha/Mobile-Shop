@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <ImageView fitHeight="677.0" fitWidth="944.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../DBPic/Day%20statistics%20(6).png" />
+         </image>
+      </ImageView>
+      <BarChart fx:id="BAR" layoutX="177.0" layoutY="121.0" prefHeight="496.0" prefWidth="726.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="360.0" prefWidth="25.0" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="31.0" layoutY="128.0" mnemonicParsing="false" onAction="#Openyear" opacity="0.0" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Year Summary" />
+      <Button layoutX="31.0" layoutY="207.0" mnemonicParsing="false" onAction="#Openmonth" opacity="0.0" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Day summary" />
+      <Button layoutX="25.0" layoutY="286.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Top products" />
+      <Button layoutY="593.0" mnemonicParsing="false" onAction="#BackToManeger" opacity="0.0" prefHeight="48.0" prefWidth="59.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

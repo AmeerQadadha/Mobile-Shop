@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+	<children>
+		<ImageView fx:id="SearchAccessories" fitHeight="718.0" fitWidth="908.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../DBPic/Product.png" />
+			</image>
+		</ImageView>
+		<Button layoutX="7.0" layoutY="641.0" mnemonicParsing="false" onAction="#BackToManeger" opacity="0.0" prefHeight="48.0" prefWidth="62.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Back">
+			<font>
+				<Font size="22.0" />
+			</font>
+		</Button>
+		<TableView fx:id="ProductTV2" layoutX="259.0" layoutY="415.0" prefHeight="170.0" prefWidth="643.0">
+			<columns>
+				<TableColumn fx:id="ProductTV2R1" minWidth="0.0" prefWidth="36.0" text="ID" />
+				<TableColumn fx:id="ProductTV2R2" prefWidth="112.80001831054688" text="Brand" />
+				<TableColumn fx:id="ProductTV2R3" prefWidth="84.79998779296875" text="Price" />
+				<TableColumn fx:id="ProductTV2R4" prefWidth="104.0" text="Color" />
+				<TableColumn fx:id="ProductTV2R5" minWidth="0.0" prefWidth="102.40005493164062" text="Stock Quantity" />
+				<TableColumn fx:id="ProductTV2R6" prefWidth="98.39996337890625" text="Type" />
+				<TableColumn fx:id="ProductTV2R7" prefWidth="109.60003662109375" text="Benefits" />
+			</columns>
+		</TableView>
+		<TableView fx:id="ProductTV1" layoutX="259.0" layoutY="125.0" prefHeight="183.0" prefWidth="643.0">
+			<columns>
+				<TableColumn fx:id="ProductTV1R1" minWidth="0.0" prefWidth="40.79998779296875" text="ID" />
+				<TableColumn fx:id="ProductTV1R2" prefWidth="119.199951171875" text="Brand" />
+				<TableColumn fx:id="ProductTV1R3" prefWidth="84.0" text="Price" />
+				<TableColumn fx:id="ProductTV1R4" prefWidth="88.80001831054688" text="Color" />
+				<TableColumn fx:id="ProductTV1R5" minWidth="0.0" prefWidth="102.39996337890625" text="Stock Quantity" />
+				<TableColumn fx:id="ProductTV1R6" prefWidth="113.5999755859375" text="Model" />
+				<TableColumn fx:id="ProductTV1R7" prefWidth="96.800048828125" text="Storage" />
+			</columns>
+		</TableView>
+		<Button layoutX="33.0" layoutY="58.0" mnemonicParsing="false" onAction="#InsertPhone" opacity="0.0" prefHeight="74.0" prefWidth="47.0" style="-fx-background-color: #0598ff;" text="Insert" textFill="WHITE">
+			<font>
+				<Font name="Comic Sans MS Bold" size="15.0" />
+			</font>
+		</Button>
+		<TextField fx:id="phoneSQ" layoutX="129.0" layoutY="163.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="106.0" promptText="Stock Quantity" style="-fx-border-color: #0598ff;">
+			<font>
+				<Font size="11.0" />
+			</font>
+		</TextField>
+		<TextField fx:id="phoneBrand" layoutX="13.0" layoutY="137.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="107.0" promptText="Brand" style="-fx-border-color: #0598ff;">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+		<TextField fx:id="phoneprice" layoutX="129.0" layoutY="137.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Price" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="phonecolor" layoutX="14.0" layoutY="163.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Color" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="phonemodel" layoutX="14.0" layoutY="190.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Model" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="phoneStorage" layoutX="129.0" layoutY="190.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Storage" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="PhoneSearch" layoutX="12.0" layoutY="308.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="110.0" promptText="Phone Name" />
+		<Button layoutX="147.0" layoutY="359.0" mnemonicParsing="false" onAction="#UpdateAcc" opacity="0.0" prefHeight="74.0" prefWidth="70.0" style="-fx-background-color: #0598ff;" text="Update" textFill="WHITE">
+			<font>
+				<Font name="Comic Sans MS Bold" size="15.0" />
+			</font>
+		</Button>
+		<Button layoutX="156.0" layoutY="233.0" mnemonicParsing="false" onAction="#DeletePhone" opacity="0.0" prefHeight="72.0" prefWidth="64.0" style="-fx-background-color: #0598ff;" text="Delete" textFill="WHITE">
+			<font>
+				<Font name="Comic Sans MS Bold" size="15.0" />
+			</font>
+		</Button>
+		<Button layoutX="40.0" layoutY="359.0" mnemonicParsing="false" onAction="#InsertAcc" opacity="0.0" prefHeight="74.0" prefWidth="52.0" style="-fx-background-color: #0598ff;" text="Insert" textFill="WHITE">
+			<font>
+				<Font name="Comic Sans MS Bold" size="15.0" />
+			</font>
+		</Button>
+		<Button layoutX="134.0" layoutY="58.0" mnemonicParsing="false" onAction="#UpdatePhone" opacity="0.0" prefHeight="74.0" prefWidth="72.0" style="-fx-background-color: #0598ff;" text="Update" textFill="WHITE">
+			<font>
+				<Font name="Comic Sans MS Bold" size="15.0" />
+			</font>
+		</Button>
+		<TextField fx:id="AccBrand" layoutX="24.0" layoutY="439.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Brand" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="AccPrice" layoutX="139.0" layoutY="440.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Price" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="AccColor" layoutX="25.0" layoutY="465.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Color" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="AccSQ" layoutX="139.0" layoutY="465.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Stock Quantity" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="Acctype" layoutX="24.0" layoutY="491.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="107.0" promptText="Type" style="-fx-border-color: #0598ff;" />
+		<TextField fx:id="Accbene" layoutX="139.0" layoutY="491.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="106.0" promptText="Beniefits" style="-fx-border-color: #0598ff;" />
+		<Button layoutX="170.0" layoutY="527.0" mnemonicParsing="false" onAction="#DeleteAcc" opacity="0.0" prefHeight="74.0" prefWidth="63.0" style="-fx-background-color: #0598ff;" text="Delete" textFill="WHITE">
+			<font>
+				<Font name="Comic Sans MS Bold" size="15.0" />
+			</font>
+		</Button>
+		<Button layoutX="834.0" layoutY="364.0" mnemonicParsing="false" onAction="#Reloadacc" opacity="0.0" prefHeight="32.0" prefWidth="41.0" style="-fx-background-color: transparent; -fx-border-color: #000000;" textFill="#0d203b00">
+			<font>
+				<Font size="11.0" />
+			</font>
+		</Button>
+		<Button layoutX="20.0" layoutY="228.0" mnemonicParsing="false" onAction="#SearchPhones" opacity="0.0" prefHeight="70.0" prefWidth="70.0" />
+		<ImageView fitHeight="40.0" fitWidth="28.0" layoutX="843.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../DBPic/icons8-refresh-24.png" />
+			</image>
+		</ImageView>
+      <TextField fx:id="AccSearch" layoutX="21.0" layoutY="601.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="110.0" promptText="Phone Name" />
+      <Button layoutX="34.0" layoutY="529.0" mnemonicParsing="false" onAction="#SearchAccessories" opacity="0.0" prefHeight="70.0" prefWidth="70.0" />
+      <ImageView fitHeight="40.0" fitWidth="28.0" layoutX="843.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../DBPic/icons8-refresh-24.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="836.0" layoutY="79.0" mnemonicParsing="false" onAction="#Reloadphone" opacity="0.0" prefHeight="32.0" prefWidth="42.0" style="-fx-background-color: #0598ff;" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="840.0" layoutY="364.0" mnemonicParsing="false" onAction="#Reloadacc" opacity="0.0" prefHeight="32.0" prefWidth="35.0" style="-fx-background-color: #0598ff;" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <ImageView fitHeight="552.0" fitWidth="778.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../DBPic/customer.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="CusTV" layoutX="155.0" layoutY="368.0" prefHeight="178.0" prefWidth="468.0">
+         <columns>
+            <TableColumn fx:id="CusTVr1" prefWidth="75.20001220703125" text="ID" />
+            <TableColumn fx:id="CusTVr2" prefWidth="138.4000244140625" text="Name" />
+            <TableColumn fx:id="CusTVr3" prefWidth="100.0" text="Phone Number" />
+            <TableColumn fx:id="CusTVr4" prefWidth="150.0" text="Address" />
+         </columns>
+      </TableView>
+      <Button layoutX="96.0" layoutY="125.0" mnemonicParsing="false" onAction="#InsertCustomer" opacity="0.0" prefHeight="74.0" prefWidth="71.0" style="-fx-background-color: #0598ff;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="InsertCusname" layoutX="182.0" layoutY="124.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="127.0" promptText="Name" style="-fx-border-color: #0598ff;" />
+      <TextField fx:id="InsertCusphone" layoutX="181.0" layoutY="151.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="127.0" promptText="Phone Number" style="-fx-border-color: #0598ff;" />
+      <TextField fx:id="InsertCusaddress" layoutX="182.0" layoutY="181.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="127.0" promptText="Address" style="-fx-border-color: #0598ff;" />
+      <Button layoutX="92.0" layoutY="270.0" mnemonicParsing="false" onAction="#UpdateCustomer" opacity="0.0" prefHeight="72.0" prefWidth="71.0" style="-fx-background-color: #0598ff;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <TextField fx:id="UpdateCusName" layoutX="183.0" layoutY="271.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="127.0" promptText="New Name" style="-fx-border-color: #0598ff;" />
+      <TextField fx:id="UpdateCusphone" layoutX="183.0" layoutY="299.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="127.0" promptText="New Phone Number" style="-fx-border-color: #0598ff;" />
+      <TextField fx:id="UpdateCusaddress" layoutX="183.0" layoutY="327.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="127.0" promptText="New Address" style="-fx-border-color: #0598ff;" />
+      <Button layoutX="433.0" layoutY="128.0" mnemonicParsing="false" onAction="#DeleteCustomer" opacity="0.0" prefHeight="64.0" prefWidth="61.0" style="-fx-background-color: #0598ff;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="9.0" layoutY="488.0" mnemonicParsing="false" onAction="#BackToManeger" opacity="0.0" prefHeight="59.0" prefWidth="54.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="442.0" layoutY="273.0" mnemonicParsing="false" onAction="#SearchCustomer" opacity="0.0" prefHeight="70.0" prefWidth="71.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Search">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="CusSearch" layoutX="513.0" layoutY="295.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="127.0" promptText="Name" style="-fx-border-color: #0598ff;" />
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="656.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../DBPic/icons8-refresh-24.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="645.0" layoutY="428.0" mnemonicParsing="false" onAction="#ReloadCus" opacity="0.0" prefHeight="50.0" prefWidth="54.0" text="Button" />
+   </children>
+</AnchorPane>
